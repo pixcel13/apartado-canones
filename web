@@ -1,0 +1,21 @@
+web
+Arquitectura cliente - servidor
+1.Realice una peticion - Cliente
+2.Disponga o revele el recurso - servidor
+
+Lenguajes de programacion
+1.Del lado del cliente
+	Interpretacion del navegador (HTML, CSS, Javascript)
+2.Del lado del servidor
+	Interpretacion del servidor (PHP, Python, Ruby, MySQL, Node.js)
+Framework o libreria
+VueJS, AngularJS, Electron - JS
+Laravel, Zend, Cake, Phalcon - PHP
+Slim, Medoo - MySQL
+BootStrap, Normalize, GrinCSS - HTML y CSS
+Preprocesadores
+ES6 - Babilon
+CSS - Less, Sass
+HTML - Pug
+NPM
+Composter
