@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
 	<title>Sistema de apartado de Cañones</title>
-	<link rel="stylesheet" href="css/estilo.css">
+	<link href="css/estilo.css" rel="stylesheet" >
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -56,7 +57,38 @@
 	<nav></nav>
 	<section>
 		<aside></aside>
-		<div id="contenedor-principal"></div>
+		<div id="contenedor-principal">
+      <table>
+        <thead>
+          <tr>
+            <th>Matrícula</th>
+            <th>nombre</th>
+            <th>telefono</th>
+            <th>correo electronico</th>
+            <th>nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+              <?php 
+      //cuando se consulta varios registros se utiliza select
+    $usuario = $db->select("usuarios","*" []);//si son especificos se usan arrglos
+    foreach ($usuarios as $usuario => $row) {
+      
+     ?>
+          <tr>
+            <td><?php echo $row['usr_matricula']; ?></td>
+            <td><?php echo $row['usr_nombre']; ?></td>
+            <td><?php echo $row['usr_telefono']; ?></td>
+            <td><?php echo $row['usr_correo']; ?></td>
+            <td><?php echo $row['usr_nivel']; ?></td>
+          </tr>
+          <?php 
+} ?>
+        </tbody>
+      </table>
+
+
+    </div>
 	</section>
 	<footer>
 		<p><i class="fas fa-user-lock"></i>Sistema desarrollado por la Logia Corp.</p>
